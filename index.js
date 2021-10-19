@@ -17,6 +17,7 @@ const map = [
 ];
 
 
+
 function criaMap() {
     const container = document.createElement('div')
     container.classList.add("container")
@@ -31,7 +32,8 @@ function criaMap() {
             linhaMap.appendChild(celulaMap)
             if(map[i][j] === 'W'){
                 const w = document.createElement('p')
-                const text = document.createTextNode('W')
+                w.classList.add('parede')
+                const text = document.createTextNode(' ')
                 celulaMap.appendChild(w)
                 w.appendChild(text)
             } else if (map[i][j] === ' '){
@@ -41,6 +43,9 @@ function criaMap() {
                 espaco.appendChild(textespaco)
             } else if (map[i][j] === 'S'){
                 const s = document.createElement('p')
+                const bola = document.createElement("div")
+                bola.classList.add('bola')
+                celulaMap.appendChild(bola)
                 const texts = document.createTextNode('S')
                 celulaMap.appendChild(s)
                 s.appendChild(texts)
@@ -54,12 +59,16 @@ function criaMap() {
                 const textespaco = document.createTextNode(' ')
                 celulaMap.appendChild(espaco)
                 espaco.appendChild(textespaco)
-                
-                
+            }
         }
-        
     }
-    
 }
-}
+
+
 criaMap()
+
+document.addEventListener('keydown', function(event) {
+    const key = event.key; // "ArrowRight", "ArrowLeft", "ArrowUp", or "ArrowDown"
+});
+
+

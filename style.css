@@ -1,0 +1,41 @@
+
+.container{
+    position: absolute;
+    top: 10px;
+    left: 26%;
+    width: 100%;
+    max-width: 338.94px;
+    max-height: 242.1px;
+    height: 100%;
+}
+
+.linhaMap {
+    display: flex;
+}
+
+.celulaMap {
+    width: 16.14px;
+    height: 16.14px;
+}
+
+
+p {
+    opacity: 1;
+    text-align: center;
+    height: 16.14px;
+    width: 16.14px;
+}
+
+.parede {
+    background-color: midnightblue;
+}
+
+.bola {
+    position: absolute;
+    border-radius: 50%;
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    border: 1px solid #000000;
+    background-color: #8400ff;
+}
