@@ -45,7 +45,7 @@ function criaMap() {
                 const s = document.createElement('p')
                 const bola = document.createElement("div")
                 bola.classList.add('bola')
-                celulaMap.appendChild(bola)
+                linhaMap.appendChild(bola)
                 const texts = document.createTextNode('S')
                 celulaMap.appendChild(s)
                 s.appendChild(texts)
@@ -71,4 +71,4 @@ document.addEventListener('keydown', function(event) {
     const key = event.key; // "ArrowRight", "ArrowLeft", "ArrowUp", or "ArrowDown"
 });
 
-
+let moveBola = document.getElementsByClassName('bola')
